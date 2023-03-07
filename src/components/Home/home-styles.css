@@ -1,0 +1,37 @@
+.home {
+    background-color: #1a1919;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem >  img {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+}
+
+.text {
+    margin-right: 130px;
+    width: 50%;
+}
+
+.text > p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .home {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text {
+        margin: 0;
+        margin-top: 50px;
+    }
+    .text > p {
+        text-align: center;
+    }
+}
