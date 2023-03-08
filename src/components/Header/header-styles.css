@@ -1,8 +1,11 @@
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 10%;
     padding: 0px 2rem 0px 2rem;
     background-color: rgb(41, 40, 40);
 }

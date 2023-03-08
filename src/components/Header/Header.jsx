@@ -5,7 +5,7 @@ export function Header({ handleClickMenu }) {
   return (
     <header className="header">
       <h2 style={{ cursor: 'pointer' }} onClick={() => handleClickMenu('menu')}>
-        Bruno Fröhlich
+        BF
       </h2>
       <table>
         <th>
