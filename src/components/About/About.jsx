@@ -8,7 +8,8 @@ export function About({ about }) {
       spacing={2}
       id="sobre"
       style={{
-        padding: '1rem',
+        marginTop: '10px',
+        padding: '2rem',
         height: '100%',
         displa: 'flex',
         justifyContent: 'center',

@@ -28,7 +28,7 @@ export function Header({ handleClickMenu }) {
               style={{ cursor: 'pointer', fontFamily: 'Tilt Warp, cursive' }}
               onClick={() => handleClickMenu('menu')}
             >
-              BF
+              Bruno Frohlich
             </Typography>
             <IconButton color="inherit" onClick={() => setIsOpen(true)}>
               <MenuOutlined />
