@@ -12,6 +12,8 @@ import CapaPokedex from './assets/CapaPokedéx.png'
 import CapaCalculadora from './assets/CapaCalculadora.png'
 import CapaMario from './assets/CapaMario.png'
 import CapaPrevisaoTempo from './assets/CapaPrevisaoTempo.png'
+import CapaLivrariaFilmes from './assets/CapaLivrariaFilmes.png'
+import CapaProjetoAndroid from './assets/CapaProjetoAndroid.png'
 import { About } from './components/About/About'
 import { Contatos } from './components/Contatos/Contatos'
 
@@ -96,6 +98,22 @@ export function App() {
       CapaIgniteToDoList,
       'https://desafio-modulo1-ignite-reactjs.vercel.app/',
       'https://github.com/brunopp00/Todo-list',
+    ],
+    [
+      11,
+      'Livraria Filmes',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaLivrariaFilmes,
+      'https://brunopp00.github.io/librarymovies/',
+      'https://github.com/brunopp00/librarymovies',
+    ],
+    [
+      12,
+      'Projeto Android',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaProjetoAndroid,
+      'https://github.com/brunopp00/projeto-android',
+      'https://brunopp00.github.io/projeto-android/',
     ],
   ]
   const about = [
