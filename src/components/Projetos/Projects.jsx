@@ -12,7 +12,7 @@ export function Projects({ listaProjetos }) {
       id="projetos"
       style={{
         padding: '1rem',
-        height: '100vh',
+        height: '100%',
         displa: 'flex',
         justifyContent: 'center',
       }}

@@ -8,11 +8,12 @@ import CapaIgniteCoffee from './assets/CapaIgniteCoffee.png'
 import CapaIgniteDtMoney from './assets/CapaIgniteDtMoney.png'
 import CapaIgniteTimer from './assets/CapaIgniteTimer.png'
 import CapaIgniteToDoList from './assets/CapaIgniteToDoList.png'
+import { About } from './components/About/About'
 
 export function App() {
   const listaProjetos = [
     [
-      0,
+      1,
       'Ignite Shop',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteShop,
@@ -20,7 +21,7 @@ export function App() {
       'https://github.com/brunopp00/Ignite-Shop',
     ],
     [
-      0,
+      2,
       'Ignite Blog',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteBlog,
@@ -28,7 +29,7 @@ export function App() {
       'https://github.com/brunopp00/GitHub-Blog',
     ],
     [
-      0,
+      3,
       'Ignite Coffee',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteCoffee,
@@ -36,7 +37,7 @@ export function App() {
       'https://github.com/brunopp00/Coffe-Delivery',
     ],
     [
-      0,
+      4,
       'Ignite DtMoney',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteDtMoney,
@@ -44,7 +45,7 @@ export function App() {
       'https://github.com/brunopp00/DT-Money',
     ],
     [
-      0,
+      5,
       'Ignite Timer',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteTimer,
@@ -52,7 +53,7 @@ export function App() {
       'https://github.com/brunopp00/Ignite-Timer',
     ],
     [
-      0,
+      6,
       'Ignite ToDoList',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteToDoList,
@@ -70,7 +71,7 @@ export function App() {
       <Header handleClickMenu={handleClickMenu} />
       <Home id="menu" />
       <Projects id="projetos" listaProjetos={listaProjetos} />
-      {/* <div id="contatos"></div> */}
+      <About />
     </div>
   )
 }

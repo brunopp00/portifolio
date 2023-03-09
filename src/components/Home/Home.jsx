@@ -26,11 +26,6 @@ export function Home() {
           <span style={{ color: '#2797b2' }}>Bruno Fröhlich</span>
           <br />
           Sou desenvolvedor
-          {/* Olá, meu nome é Bruno Fröhlich, atualmente trabalho como estagiário em
-          desenvolvimento de software na Unimed Vale do Caí. Durante meu estágio
-          na Unimed, contribui na criação de diversos programas que são usados
-          por toda a cooperativa. Possuo habilidades avançadas nas linguagens
-        JavaScript e TypeScript. */}
         </Typography>
       </Grid>
       <Grid item xs={12} md={4} lg={4} style={{ textAlign: 'center' }}>
