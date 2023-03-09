@@ -8,6 +8,10 @@ import CapaIgniteCoffee from './assets/CapaIgniteCoffee.png'
 import CapaIgniteDtMoney from './assets/CapaIgniteDtMoney.png'
 import CapaIgniteTimer from './assets/CapaIgniteTimer.png'
 import CapaIgniteToDoList from './assets/CapaIgniteToDoList.png'
+import CapaPokedex from './assets/CapaPokedéx.png'
+import CapaCalculadora from './assets/CapaCalculadora.png'
+import CapaMario from './assets/CapaMario.png'
+import CapaPrevisaoTempo from './assets/CapaPrevisaoTempo.png'
 import { About } from './components/About/About'
 import { Contatos } from './components/Contatos/Contatos'
 
@@ -39,6 +43,30 @@ export function App() {
     ],
     [
       4,
+      'Pokedéx',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaPokedex,
+      'https://brunopp00.github.io/pokedex/',
+      'https://github.com/brunopp00/pokedex',
+    ],
+    [
+      5,
+      'Previsão Tempo',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaPrevisaoTempo,
+      'https://brunopp00.github.io/previsaodotempo/',
+      'https://github.com/brunopp00/previsaodotempo',
+    ],
+    [
+      6,
+      'Calculadora',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaCalculadora,
+      'https://brunopp00.github.io/calculadora/calculadora.html',
+      'https://github.com/brunopp00/calculadora',
+    ],
+    [
+      7,
       'Ignite DtMoney',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteDtMoney,
@@ -46,7 +74,15 @@ export function App() {
       'https://github.com/brunopp00/DT-Money',
     ],
     [
-      5,
+      8,
+      'Super Mario',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaMario,
+      'https://brunopp00.github.io/SuperMario/',
+      'https://github.com/brunopp00/SuperMario',
+    ],
+    [
+      9,
       'Ignite Timer',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteTimer,
@@ -54,7 +90,7 @@ export function App() {
       'https://github.com/brunopp00/Ignite-Timer',
     ],
     [
-      6,
+      10,
       'Ignite ToDoList',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteToDoList,
