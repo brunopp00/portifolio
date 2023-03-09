@@ -9,6 +9,7 @@ import CapaIgniteDtMoney from './assets/CapaIgniteDtMoney.png'
 import CapaIgniteTimer from './assets/CapaIgniteTimer.png'
 import CapaIgniteToDoList from './assets/CapaIgniteToDoList.png'
 import { About } from './components/About/About'
+import { Contatos } from './components/Contatos/Contatos'
 
 export function App() {
   const listaProjetos = [
@@ -61,6 +62,24 @@ export function App() {
       'https://github.com/brunopp00/Todo-list',
     ],
   ]
+  const about = [
+    [
+      1,
+      'Em 2020, durante a pandemia comecei meus estudos em HTML5 e CSS3 no Curso em Vídeo',
+    ],
+    [
+      2,
+      `Em 2021, comecei a me aprofundar em JavaScript e realizei meus primeiros mini-projetos, aquelas telas "feias" que todo programador já fez no início.`,
+    ],
+    [
+      3,
+      'Em 2022, consegui meu primeiro emprego na área de programação, na Unimed Vale do Cai. Quando comecei confesso que fiquei assustado porque não entendia nada do que o pessoal falava, pois eles usam React, e eu para falar a verdade nem sabia o que isso significava.',
+    ],
+    [
+      4,
+      'Em 2023, que por acaso é quando estou fazendo esse site, vejo que mesmo com apenas 1 ano de experiência de trabalho já adquiri muitos aprendizados e conhecimento.',
+    ],
+  ]
 
   function handleClickMenu(menu) {
     const element = document.getElementById(menu)
@@ -71,7 +90,8 @@ export function App() {
       <Header handleClickMenu={handleClickMenu} />
       <Home id="menu" />
       <Projects id="projetos" listaProjetos={listaProjetos} />
-      <About />
+      <About about={about} />
+      <Contatos />
     </div>
   )
 }
