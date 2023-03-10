@@ -88,18 +88,20 @@ export function Projects({ listaProjetos }) {
             padding={'10px'}
           >
             <Typography>
-              <a
-                target={'_blank'}
-                style={{
-                  color: '#cecece',
-                  textDecoration: 'none',
-                  fontFamily: 'Tilt Warp, cursive',
-                }}
-                href={projeto[4]}
-                rel="noreferrer"
-              >
-                Visualizar
-              </a>
+              {projeto[4] !== '' && (
+                <a
+                  target={'_blank'}
+                  style={{
+                    color: '#cecece',
+                    textDecoration: 'none',
+                    fontFamily: 'Tilt Warp, cursive',
+                  }}
+                  href={projeto[4]}
+                  rel="noreferrer"
+                >
+                  Visualizar
+                </a>
+              )}
             </Typography>
             <Typography>
               <a

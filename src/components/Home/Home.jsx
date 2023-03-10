@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
-import fotoBruno from '../../assets/Foto-Bruno.png'
+import fotoBruno from '../../assets/Foto-Bruno2.png'
 
 export function Home() {
   return (
@@ -36,7 +36,7 @@ export function Home() {
             height: '80%',
             width: '80%',
             borderRadius: '100%',
-            border: '5px solid #3b3a3a',
+            border: '5px solid #000000',
           }}
         />
       </Grid>

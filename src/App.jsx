@@ -24,7 +24,7 @@ export function App() {
       'Ignite Shop',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteShop,
-      '#',
+      '',
       'https://github.com/brunopp00/Ignite-Shop',
     ],
     [
@@ -32,7 +32,7 @@ export function App() {
       'Ignite Blog',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteBlog,
-      '#',
+      '',
       'https://github.com/brunopp00/GitHub-Blog',
     ],
     [
@@ -112,8 +112,8 @@ export function App() {
       'Projeto Android',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaProjetoAndroid,
-      'https://github.com/brunopp00/projeto-android',
       'https://brunopp00.github.io/projeto-android/',
+      'https://github.com/brunopp00/projeto-android',
     ],
   ]
   const about = [
