@@ -14,6 +14,7 @@ import CapaMario from './assets/CapaMario.png'
 import CapaPrevisaoTempo from './assets/CapaPrevisaoTempo.png'
 import CapaLivrariaFilmes from './assets/CapaLivrariaFilmes.png'
 import CapaProjetoAndroid from './assets/CapaProjetoAndroid.png'
+import CapaIgniteFeed from './assets/CapaIgniteFeed.png'
 import { About } from './components/About/About'
 import { Contatos } from './components/Contatos/Contatos'
 
@@ -114,6 +115,14 @@ export function App() {
       CapaProjetoAndroid,
       'https://brunopp00.github.io/projeto-android/',
       'https://github.com/brunopp00/projeto-android',
+    ],
+    [
+      13,
+      'Ignite Feed',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaIgniteFeed,
+      'https://ignite-modulo-01.vercel.app/',
+      'https://github.com/brunopp00/Ignite-Feed',
     ],
   ]
   const about = [
