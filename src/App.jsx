@@ -16,6 +16,7 @@ import CapaLivrariaFilmes from './assets/CapaLivrariaFilmes.png'
 import CapaProjetoAndroid from './assets/CapaProjetoAndroid.png'
 import CapaIgniteFeed from './assets/CapaIgniteFeed.png'
 import CapaDesingSystem from './assets/CapaDesingSystem.png'
+import CapaIgniteCall from './assets/CapaIgniteCall.png'
 import { About } from './components/About/About'
 import { Contatos } from './components/Contatos/Contatos'
 
@@ -132,6 +133,14 @@ export function App() {
       CapaDesingSystem,
       'https://brunopp00.github.io/design-system/',
       'https://github.com/brunopp00/design-system',
+    ],
+    [
+      16,
+      'Ignite Call',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaIgniteCall,
+      'https://github.com/brunopp00/ignite-call',
+      'https://ignite-call-livid-alpha.vercel.app/',
     ],
   ]
   const about = [
