@@ -17,6 +17,8 @@ import CapaProjetoAndroid from './assets/CapaProjetoAndroid.png'
 import CapaIgniteFeed from './assets/CapaIgniteFeed.png'
 import CapaDesingSystem from './assets/CapaDesingSystem.png'
 import CapaIgniteCall from './assets/CapaIgniteCall.png'
+import CapaEsgotamento from './assets/Capa-Esgotamento.png'
+import CapaMensalidades from './assets/CapaMensalidades.png'
 import { About } from './components/About/About'
 import { Contatos } from './components/Contatos/Contatos'
 
@@ -141,6 +143,22 @@ export function App() {
       CapaIgniteCall,
       'https://github.com/brunopp00/ignite-call',
       'https://ignite-call-livid-alpha.vercel.app/',
+    ],
+    [
+      17,
+      'Esgotamento',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaEsgotamento,
+      'https://github.com/brunopp00/esgotamento-sanitario',
+      'https://esgotamento-sanitario.vercel.app/',
+    ],
+    [
+      18,
+      'Mensalidades',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      CapaMensalidades,
+      'https://github.com/brunopp00/mensalidades',
+      'https://mensalidades-production.up.railway.app/',
     ],
   ]
   const about = [
