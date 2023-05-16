@@ -9,10 +9,7 @@ import CapaIgniteDtMoney from './assets/CapaIgniteDtMoney.png'
 import CapaIgniteTimer from './assets/CapaIgniteTimer.png'
 import CapaIgniteToDoList from './assets/CapaIgniteToDoList.png'
 import CapaPokedex from './assets/CapaPokedéx.png'
-import CapaCalculadora from './assets/CapaCalculadora.png'
-import CapaMario from './assets/CapaMario.png'
 import CapaPrevisaoTempo from './assets/CapaPrevisaoTempo.png'
-import CapaLivrariaFilmes from './assets/CapaLivrariaFilmes.png'
 import CapaProjetoAndroid from './assets/CapaProjetoAndroid.png'
 import CapaIgniteFeed from './assets/CapaIgniteFeed.png'
 import CapaDesingSystem from './assets/CapaDesingSystem.png'
@@ -65,28 +62,12 @@ export function App() {
       'https://github.com/brunopp00/previsaodotempo',
     ],
     [
-      6,
-      'Calculadora',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaCalculadora,
-      'https://brunopp00.github.io/calculadora/calculadora.html',
-      'https://github.com/brunopp00/calculadora',
-    ],
-    [
       7,
       'Ignite DtMoney',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteDtMoney,
       'https://03-modulo-ignite-reactjs.vercel.app/',
       'https://github.com/brunopp00/DT-Money',
-    ],
-    [
-      8,
-      'Super Mario',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaMario,
-      'https://brunopp00.github.io/SuperMario/',
-      'https://github.com/brunopp00/SuperMario',
     ],
     [
       9,
@@ -103,14 +84,6 @@ export function App() {
       CapaIgniteToDoList,
       'https://desafio-modulo1-ignite-reactjs.vercel.app/',
       'https://github.com/brunopp00/Todo-list',
-    ],
-    [
-      11,
-      'Livraria Filmes',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaLivrariaFilmes,
-      'https://brunopp00.github.io/librarymovies/',
-      'https://github.com/brunopp00/librarymovies',
     ],
     [
       12,
