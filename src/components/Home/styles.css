@@ -1,0 +1,14 @@
+.animation-text {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .animation-word {
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .animation-word.active {
+    opacity: 1;
+  }
