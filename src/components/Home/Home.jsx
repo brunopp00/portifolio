@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
-import fotoBruno from '../../assets/Foto-Bruno2.png'
+import fotoBruno from '../../assets/Foto-Bruno-trasparente.png'
 
 export function Home() {
   return (
@@ -16,16 +16,18 @@ export function Home() {
         height: '100vh',
       }}
     >
-      <Grid item xs={12} md={4} lg={6} style={{ textAlign: 'center' }}>
+      <Grid item xs={12} md={4} lg={6} style={{ textAlign: 'start' }}>
         <Typography
           variant="h4"
           style={{ fontFamily: 'Tilt Warp, cursive', color: 'white' }}
         >
-          Olá,
-          <br /> Me chamo {''}
-          <span style={{ color: '#2797b2' }}>Bruno Fröhlich</span>
-          <br />
-          Sou desenvolvedor
+          Olá, Me chamo Bruno Fröhlich
+        </Typography>
+        <Typography
+          variant="h4"
+          style={{ fontFamily: 'Tilt Warp, cursive', color: '#2797b2' }}
+        >
+          Desenvolvedor Front-End
         </Typography>
       </Grid>
       <Grid item xs={12} md={4} lg={4} style={{ textAlign: 'center' }}>
@@ -34,9 +36,10 @@ export function Home() {
           alt=""
           style={{
             height: '80%',
+            background: 'transparent',
             width: '80%',
             borderRadius: '100%',
-            border: '5px solid #000000',
+            border: '5px solid transparent',
           }}
         />
       </Grid>
