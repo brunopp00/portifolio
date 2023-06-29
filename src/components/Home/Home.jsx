@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material'
+import { Grid, Typography, useMediaQuery } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import fotoBruno from '../../assets/Foto-Bruno-trasparente.png'
 import './styles.css'
@@ -7,6 +7,8 @@ export function Home() {
   const words = ['Front-end', 'Back-end'] // Adicione mais palavras se desejar
   const [index, setIndex] = useState(0)
   const [currentWord, setCurrentWord] = useState(words[0])
+
+  const milPx = useMediaQuery('(min-width:1300px)')
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,13 +48,21 @@ export function Home() {
       <Grid item xs={12} md={4} lg={6} style={{ textAlign: 'start' }}>
         <Typography
           variant="h4"
-          style={{ fontFamily: 'Tilt Warp, cursive', color: 'white' }}
+          style={{
+            fontFamily: 'Tilt Warp, cursive',
+            color: 'white',
+            textAlign: milPx ? 'start' : 'center',
+          }}
         >
           Olá, Me chamo Bruno Fröhlich
         </Typography>
         <Typography
           variant="h4"
-          style={{ fontFamily: 'Tilt Warp, cursive', color: '#2797b2' }}
+          style={{
+            fontFamily: 'Tilt Warp, cursive',
+            color: '#2797b2',
+            textAlign: milPx ? 'start' : 'center',
+          }}
         >
           Desenvolvedor
           <div className="animation-text">
