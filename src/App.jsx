@@ -114,24 +114,24 @@ export function App() {
       'Ignite Call',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaIgniteCall,
-      'https://github.com/brunopp00/ignite-call',
       'https://ignite-call-livid-alpha.vercel.app/',
+      'https://github.com/brunopp00/ignite-call',
     ],
     [
       17,
       'Esgotamento',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaEsgotamento,
-      'https://github.com/brunopp00/esgotamento-sanitario',
       'https://esgotamento-sanitario.vercel.app/',
+      'https://github.com/brunopp00/esgotamento-sanitario',
     ],
     [
       18,
       'Mensalidades',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaMensalidades,
-      'https://github.com/brunopp00/mensalidades',
       'https://mensalidades-production.up.railway.app/',
+      'https://github.com/brunopp00/mensalidades',
     ],
   ]
   const about = [
