@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 const buttonsList = [
   { text: 'PROJETOS', click: 'projetos' },
   { text: 'SOBRE MIM', click: 'sobre' },
+  { text: 'HABILIDADES', click: 'abilities' },
   { text: 'CONTATOS', click: 'contatos' },
 ]
 
@@ -14,13 +15,13 @@ export function Header({ handleClickMenu }) {
     <header className="h-3">
       <div className="bg-zinc-800 h-1/2 flex justify-between items-center p-7">
         <h1
-          className="p-0 cursor-pointer font-tilt-warp text-white"
+          className="p-0 cursor-pointer font-tilt-warp text-violet-600"
           onClick={() => handleClickMenu('menu')}
         >
           Bruno Frohlich
         </h1>
         <MenuOutlined
-          className="text-white cursor-pointer"
+          className="text-violet-600 cursor-pointer"
           onClick={() => setIsOpen(true)}
         />
       </div>
@@ -29,7 +30,7 @@ export function Header({ handleClickMenu }) {
           {buttonsList.map((item) => (
             <>
               <button
-                className="w-48 text-white p-3 transition-opacity rounded-lg hover:opacity-10"
+                className="w-48 text-violet-600 p-3 transition-opacity rounded-lg hover:opacity-10"
                 key={item.text}
                 onClick={() => {
                   setIsOpen(false)

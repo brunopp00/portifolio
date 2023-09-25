@@ -1,17 +1,21 @@
 import React from 'react'
-import fotoBruno from '../../assets/foto-bruno2.jpeg'
+import fotoBruno from '../assets/foto-bruno2.jpeg'
 export function About() {
   return (
-    <div className="w-full h-screen" id="sobre">
+    <div className="w-full h-full" id="sobre">
       <div className="text-center">
-        <h1 className="text-white font-tilt-warp">Sobre Mim</h1>
+        <h1 className="text-violet-600 font-tilt-warp">Sobre Mim</h1>
       </div>
-      <div className="grid grid-cols-2 h-4/5 bg-zinc-800 m-10 rounded-xl">
-        <div className="w-full h-full flex justify-center items-center">
-          <img className="rounded-full" src={fotoBruno} alt="" />
+      <div className="grid grid-cols-1 lg:grid-cols-2 h-4/5 bg-zinc-800 m-10 rounded-xl">
+        <div className="flex justify-center items-center">
+          <img
+            className="rounded-lg w-[45%] h-[90%] lg:w-[40%] lg:h-[50%] "
+            src={fotoBruno}
+            alt=""
+          />
         </div>
         <div className="flex w-full h-full items-center p-10">
-          <p className="font-tilt-warp text-zinc-50 text-sm">
+          <p className="font-tilt-warp text-violet-600 text-xs lg:text-sm">
             Meu nome é Bruno Fröhlich, nasci em 4 de fevereiro de 2006. Desde
             muito cedo, desenvolver e programar se tornaram minhas paixões. Sou
             um programador com conhecimento em várias linguagens e tecnologias,

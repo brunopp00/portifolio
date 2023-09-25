@@ -34,11 +34,11 @@ export function Home() {
       className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center h-screen w-full p-10 "
       id="menu"
     >
-      <div className="text-center lg:text-start w-full">
+      <div className="text-center lg:text-end w-full">
         <h1 className="font-tilt-warp text-white">
           Olá, Me chamo Bruno Fröhlich
         </h1>
-        <h1 className="font-tilt-warp text-blue-700">
+        <h1 className="font-tilt-warp text-violet-600">
           Desenvolvedor
           <div className="animation-text">
             <span id="animation-word" className="animation-word">

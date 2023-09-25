@@ -1,7 +1,7 @@
-import { Header } from './components/Header/Header'
+import { Header } from './components/Header'
 import './app.css'
 import { Home } from './components/Home/Home'
-import { Projects } from './components/Projetos/Projects'
+import { Projects } from './components/Projects'
 import CapaIgniteShop from './assets/CapaIgniteShop.png'
 import CapaIgniteBlog from './assets/CapaIgniteBlog.png'
 import CapaIgniteCoffee from './assets/CapaIgniteCoffee.png'
@@ -16,8 +16,9 @@ import CapaDesingSystem from './assets/CapaDesingSystem.png'
 import CapaIgniteCall from './assets/CapaIgniteCall.png'
 import CapaEsgotamento from './assets/Capa-Esgotamento.png'
 import CapaMensalidades from './assets/CapaMensalidades.png'
-import { About } from './components/About/About'
-import { Contatos } from './components/Contatos/Contatos'
+import { About } from './components/About'
+import { Contatos } from './components/Contatos'
+import { Abilities } from './components/Abilities'
 
 export function App() {
   const listaProjetos = [
@@ -143,8 +144,9 @@ export function App() {
     <div>
       <Header handleClickMenu={handleClickMenu} />
       <Home id="menu" />
-      <Projects id="projetos" listaProjetos={listaProjetos} />
       <About />
+      <Abilities />
+      <Projects id="projetos" listaProjetos={listaProjetos} />
       <Contatos />
     </div>
   )
