@@ -11,18 +11,21 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@mui/base": "^5.0.0-beta.16",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.13",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^5.3.9"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8.35.0",
+    "postcss": "^8.4.30",
+    "tailwindcss": "^3.3.3",
     "vite": "^4.1.0"
   }
 }

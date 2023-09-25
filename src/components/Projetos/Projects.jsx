@@ -1,124 +1,60 @@
-import { Box, Grid, Typography, useMediaQuery } from '@mui/material'
 import React from 'react'
 
 export function Projects({ listaProjetos }) {
-  const milPx = useMediaQuery('(min-width:1300px)')
-  const quinhentosPx = useMediaQuery('(min-width:500px)')
-
   return (
-    <Grid
-      container
-      spacing={2}
-      id="projetos"
-      style={{
-        padding: '1rem',
-        height: '100%',
-        displa: 'flex',
-        justifyContent: 'center',
-      }}
-    >
-      <Grid
-        item
-        xs={12}
-        style={{
-          marginBottom: '10px',
-          textAlign: 'center',
-        }}
-      >
-        <Typography
-          style={{ fontFamily: 'Tilt Warp, cursive' }}
-          variant="h3"
-          color={'white'}
-        >
-          Projetos
-        </Typography>
-        <Typography
-          style={{ fontFamily: 'Tilt Warp, cursive' }}
-          variant="h5"
-          color={'#ababab'}
-        >
+    <div className="h-full justify-center p-4" id="projetos">
+      <div className="w-full mb-2 text-center">
+        <h1 className="font-tilt-warp text-white">Projetos</h1>
+        <h1 className="font-tilt-warp text-zinc-400">
           Programas que desenvolvi ao longo do tempo
-        </Typography>
-      </Grid>
-      {listaProjetos.map((projeto) => (
-        <Box
-          borderRadius={'10px'}
-          display={'flex'}
-          flexDirection={'column'}
-          margin={'10px'}
-          style={{ backgroundColor: '#282828' }}
-          width={milPx ? '25%' : quinhentosPx ? '45%' : '100%'}
-          height={milPx ? '90%' : '100%'}
-          key={projeto[0]}
-        >
-          <Box display={'flex'} width={'100%'} height={'45%'}>
-            <img
-              height={'100%'}
-              style={{
-                borderTopLeftRadius: '10px',
-                borderTopRightRadius: '10px',
-              }}
-              width={'100%'}
-              src={projeto[3]}
-              alt=""
-            />
-          </Box>
-          <Box width={'100%'} height={'45%'} padding={'20px'}>
-            <Typography
-              style={{ fontFamily: 'Tilt Warp, cursive', color: '#d0d0d0' }}
-              variant="h4"
-            >
-              {projeto[1]}
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                marginTop: '10px',
-                fontFamily: 'Roboto, sans-serif',
-                color: '#d0d0d0',
-                fontWeight: 'lighter',
-              }}
-            >
-              {projeto[2]}
-            </Typography>
-          </Box>
-          <Box
-            display={'flex'}
-            justifyContent={'space-between'}
-            padding={'10px'}
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 p-20">
+        {listaProjetos.map((projeto) => (
+          <div
+            className="flex flex-col h-full lg:w-full bg-zinc-800 rounded-lg"
+            key={projeto[0]}
           >
-            <Typography>
-              {projeto[4] !== '' && (
+            <div className="flex w-full h-2/5">
+              <img
+                className="w-full h-full rounded-t-lg object-fill"
+                src={projeto[3]}
+                alt=""
+              />
+            </div>
+            <div className="w-full h-full p-5">
+              <h1 className="font-tilt-warp text-zinc-200">{projeto[1]}</h1>
+              <h2 className="mt-2 font-roboto text-zinc-200 font-thin">
+                {projeto[2]}
+              </h2>
+            </div>
+            <div className="flex justify-between items-end p-2">
+              <p>
+                {projeto[4] !== '' && (
+                  <a
+                    target={'_blank'}
+                    className="text-zinc-300 font-tilt-warp"
+                    href={projeto[4]}
+                    rel="noreferrer"
+                  >
+                    Visualizar
+                  </a>
+                )}
+              </p>
+              <p>
                 <a
                   target={'_blank'}
-                  style={{
-                    color: '#cecece',
-                    textDecoration: 'none',
-                    fontFamily: 'Tilt Warp, cursive',
-                  }}
-                  href={projeto[4]}
+                  className="text-zinc-300 font-tilt-warp"
+                  href={projeto[5]}
                   rel="noreferrer"
                 >
-                  Visualizar
+                  Ver código
                 </a>
-              )}
-            </Typography>
-            <Typography>
-              <a
-                target={'_blank'}
-                style={{
-                  color: '#cecece',
-                  fontFamily: 'Tilt Warp, cursive',
-                }}
-                href={projeto[5]}
-                rel="noreferrer"
-              >
-                Ver código
-              </a>
-            </Typography>
-          </Box>
-        </Box>
-      ))}
-    </Grid>
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }

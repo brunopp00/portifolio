@@ -1,4 +1,3 @@
-import { Grid, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import fotoBruno from '../../assets/Foto-Bruno-trasparente.png'
 import './styles.css'
@@ -31,50 +30,30 @@ export function Home() {
   }, [index])
 
   return (
-    <Grid
+    <div
+      className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center h-screen w-full p-10 "
       id="menu"
-      container
-      spacing={2}
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: '40px',
-        height: '100vh',
-      }}
     >
-      <Grid item xs={12} md={4} lg={6} style={{ textAlign: 'start' }}>
-        <Typography
-          variant="h4"
-          style={{ fontFamily: 'Tilt Warp, cursive', color: 'white' }}
-        >
+      <div className="text-center lg:text-start w-full">
+        <h1 className="font-tilt-warp text-white">
           Olá, Me chamo Bruno Fröhlich
-        </Typography>
-        <Typography
-          variant="h4"
-          style={{ fontFamily: 'Tilt Warp, cursive', color: '#2797b2' }}
-        >
+        </h1>
+        <h1 className="font-tilt-warp text-blue-700">
           Desenvolvedor
           <div className="animation-text">
             <span id="animation-word" className="animation-word">
               {currentWord}
             </span>
           </div>
-        </Typography>
-      </Grid>
-      <Grid item xs={12} md={4} lg={4} style={{ textAlign: 'center' }}>
+        </h1>
+      </div>
+      <div className="w-full flex justify-center">
         <img
+          className="h-1/2 w-1/2 bg-transparent rounded-full border-solid border-transparent border-spacing-1"
           src={fotoBruno}
           alt=""
-          style={{
-            height: '80%',
-            background: 'transparent',
-            width: '80%',
-            borderRadius: '100%',
-            border: '5px solid transparent',
-          }}
         />
-      </Grid>
-    </Grid>
+      </div>
+    </div>
   )
 }
