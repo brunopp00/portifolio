@@ -106,8 +106,8 @@ export function App() {
       'Design System',
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       CapaDesingSystem,
-      'https://brunopp00.github.io/design-system/',
       'https://github.com/brunopp00/design-system',
+      'https://brunopp00.github.io/design-system/',
     ],
     [
       16,
