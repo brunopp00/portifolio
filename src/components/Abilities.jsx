@@ -10,35 +10,38 @@ import {
   BiLogoTailwindCss,
   BiLogoTypescript,
 } from 'react-icons/bi'
+import { SiStorybook } from 'react-icons/si'
 import React from 'react'
 
 export const Abilities = () => {
   const abilitiesList = [
-    { name: 'HTML5', icon: <BiLogoHtml5 size={45} /> },
-    { name: 'CSS3', icon: <BiLogoCss3 size={45} /> },
-    { name: 'JavaScript', icon: <BiLogoJavascript size={45} /> },
-    { name: 'TypeScript', icon: <BiLogoTypescript size={45} /> },
-    { name: 'NodeJs', icon: <BiLogoNodejs size={45} /> },
-    { name: 'ReactJs', icon: <BiLogoReact size={45} /> },
-    { name: 'Tailwind CSS', icon: <BiLogoTailwindCss size={45} /> },
-    { name: 'Redux', icon: <BiLogoRedux size={45} /> },
-    { name: 'Figma', icon: <BiLogoFigma size={45} /> },
-    { name: 'Android Java', icon: <BiLogoAndroid size={45} /> },
+    { name: 'HTML5', icon: <BiLogoHtml5 size={35} /> },
+    { name: 'CSS3', icon: <BiLogoCss3 size={35} /> },
+    { name: 'JavaScript', icon: <BiLogoJavascript size={35} /> },
+    { name: 'TypeScript', icon: <BiLogoTypescript size={35} /> },
+    { name: 'NodeJs', icon: <BiLogoNodejs size={35} /> },
+    { name: 'ReactJs', icon: <BiLogoReact size={35} /> },
+    { name: 'Tailwind CSS', icon: <BiLogoTailwindCss size={35} /> },
+    { name: 'Redux', icon: <BiLogoRedux size={35} /> },
+    { name: 'Figma', icon: <BiLogoFigma size={35} /> },
+    { name: 'Android Java', icon: <BiLogoAndroid size={35} /> },
+    { name: 'Storybook', icon: <SiStorybook size={35} /> },
+    { name: 'Figma', icon: <BiLogoFigma size={35} /> },
   ]
   return (
-    <div id="abilities" className="h-full w-full">
+    <div id="abilities" className="h-full w-full mt-20">
       <div className="w-full">
-        <h1 className="text-default text-center font-tilt-warp">Habilidades</h1>
+        <h1 className="text-white text-center font-tilt-warp">Habilidades</h1>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 p-5">
+      <div className="grid grid-cols-2 gap-5 lg:grid-cols-8 pl-16 pr-16">
         {abilitiesList.map((item) => {
           return (
             <div
               key={item.name}
-              className="w-[85%] h-full p-5 bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-default transform transition-transform  hover:scale-110"
+              className="w-[100%] gap-3 h-full p-5 bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-default transform transition-transform  hover:scale-110"
             >
               <div>
-                <p className="text-default text-lg">{item.name}</p>
+                <p className="text-default text-justify">{item.name}</p>
               </div>
               <div className="text-default">{item.icon}</div>
             </div>

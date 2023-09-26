@@ -3,16 +3,16 @@ import { Drawer } from '@mui/material'
 import React, { useState } from 'react'
 
 const buttonsList = [
-  { text: 'PROJETOS', click: 'projetos' },
-  { text: 'SOBRE MIM', click: 'sobre' },
-  { text: 'HABILIDADES', click: 'abilities' },
-  { text: 'CONTATOS', click: 'contatos' },
+  { id: 0, text: 'PROJETOS', click: 'projetos' },
+  { id: 1, text: 'SOBRE MIM', click: 'sobre' },
+  { id: 2, text: 'HABILIDADES', click: 'abilities' },
+  { id: 3, text: 'CONTATOS', click: 'contatos' },
 ]
 
 export function Header({ handleClickMenu }) {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <header className="h-3">
+    <header className="h-3 w-full z-10 fixed">
       <div className="bg-zinc-800 h-1/2 flex justify-between items-center p-7">
         <h1
           className="p-0 cursor-pointer font-tilt-warp text-default"
@@ -31,7 +31,7 @@ export function Header({ handleClickMenu }) {
             <>
               <button
                 className="w-48 text-default p-3 transition-opacity rounded-lg hover:opacity-10"
-                key={item.text}
+                key={item.id}
                 onClick={() => {
                   setIsOpen(false)
                   handleClickMenu(item.click)

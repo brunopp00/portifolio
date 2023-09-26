@@ -19,13 +19,16 @@ import PreviewIgniteBlog from './assets-preview/ignite-blog.png'
 import {
   BiLogoCss3,
   BiLogoFigma,
+  BiLogoGithub,
   BiLogoHtml5,
   BiLogoJavascript,
+  BiLogoLinkedin,
   BiLogoNodejs,
   BiLogoReact,
   BiLogoTypescript,
 } from 'react-icons/bi'
-
+import { BsTelephone } from 'react-icons/bs'
+import { HiOutlineMail } from 'react-icons/hi'
 import { SiStorybook } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { About } from './components/About'
@@ -43,13 +46,13 @@ export function App() {
       urlSite: '',
       urlGitHub: 'https://github.com/brunopp00/Ignite-Shop',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoNodejs key={1} />,
-        <BiLogoTypescript key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
-        <TbBrandNextjs key={1} />,
-        <BiLogoFigma key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoNodejs key={2} size={20} />,
+        <BiLogoTypescript key={3} size={20} />,
+        <BiLogoHtml5 key={4} size={20} />,
+        <BiLogoCss3 key={5} size={20} />,
+        <TbBrandNextjs key={6} size={20} />,
+        <BiLogoFigma key={7} size={20} />,
       ],
     },
     {
@@ -61,12 +64,12 @@ export function App() {
       urlSite: '',
       urlGitHub: 'https://github.com/brunopp00/GitHub-Blog',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoNodejs key={1} />,
-        <BiLogoTypescript key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
-        <BiLogoFigma key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoNodejs key={2} size={20} />,
+        <BiLogoTypescript key={3} size={20} />,
+        <BiLogoHtml5 key={4} size={20} />,
+        <BiLogoCss3 key={5} size={20} />,
+        <BiLogoFigma key={6} size={20} />,
       ],
     },
     {
@@ -78,11 +81,11 @@ export function App() {
       urlSite: 'https://02-desafio-ignite-reactjs.vercel.app/',
       urlGitHub: 'https://github.com/brunopp00/Coffe-Delivery',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoJavascript key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
-        <BiLogoFigma key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoJavascript key={2} size={20} />,
+        <BiLogoHtml5 key={3} size={20} />,
+        <BiLogoCss3 key={4} size={20} />,
+        <BiLogoFigma key={5} size={20} />,
       ],
     },
     {
@@ -94,9 +97,9 @@ export function App() {
       urlSite: 'https://brunopp00.github.io/pokedex/',
       urlGitHub: 'https://github.com/brunopp00/pokedex',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoHtml5 key={2} size={20} />,
+        <BiLogoCss3 key={3} size={20} />,
       ],
     },
     {
@@ -108,9 +111,9 @@ export function App() {
       urlSite: 'https://brunopp00.github.io/previsaodotempo/',
       urlGitHub: 'https://github.com/brunopp00/previsaodotempo',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={2} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoHtml5 key={2} size={20} />,
+        <BiLogoCss3 key={3} size={20} />,
       ],
     },
     {
@@ -122,13 +125,13 @@ export function App() {
       urlSite: 'https://03-modulo-ignite-reactjs.vercel.app/',
       urlGitHub: 'https://github.com/brunopp00/DT-Money',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoNodejs key={1} />,
-        <BiLogoTypescript key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
-        <TbBrandNextjs key={1} />,
-        <BiLogoFigma key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoNodejs key={2} size={20} />,
+        <BiLogoTypescript key={3} size={20} />,
+        <BiLogoHtml5 key={4} size={20} />,
+        <BiLogoCss3 key={5} size={20} />,
+        <TbBrandNextjs key={6} size={20} />,
+        <BiLogoFigma key={7} size={20} />,
       ],
     },
     {
@@ -140,11 +143,11 @@ export function App() {
       urlSite: 'https://02-ignite-timer-seven.vercel.app/',
       urlGitHub: 'https://github.com/brunopp00/Ignite-Timer',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoTypescript key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
-        <BiLogoFigma key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoTypescript key={2} size={20} />,
+        <BiLogoHtml5 key={3} size={20} />,
+        <BiLogoCss3 key={4} size={20} />,
+        <BiLogoFigma key={5} size={20} />,
       ],
     },
     {
@@ -156,11 +159,11 @@ export function App() {
       urlSite: 'https://desafio-modulo1-ignite-reactjs.vercel.app/',
       urlGitHub: 'https://github.com/brunopp00/Todo-list',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoJavascript key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
-        <BiLogoFigma key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoJavascript key={2} size={20} />,
+        <BiLogoHtml5 key={3} size={20} />,
+        <BiLogoCss3 key={4} size={20} />,
+        <BiLogoFigma key={5} size={20} />,
       ],
     },
     {
@@ -171,7 +174,10 @@ export function App() {
       image: PreviewAndroid,
       urlSite: 'https://brunopp00.github.io/projeto-android/',
       urlGitHub: 'https://github.com/brunopp00/projeto-android',
-      icons: [<BiLogoHtml5 key={1} />, <BiLogoCss3 key={1} />],
+      icons: [
+        <BiLogoHtml5 key={1} size={20} />,
+        <BiLogoCss3 key={2} size={20} />,
+      ],
     },
     {
       id: 13,
@@ -182,11 +188,11 @@ export function App() {
       urlSite: 'https://ignite-modulo-01.vercel.app/',
       urlGitHub: 'https://github.com/brunopp00/Ignite-Feed',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoJavascript key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
-        <BiLogoFigma key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoJavascript key={2} size={20} />,
+        <BiLogoHtml5 key={3} size={20} />,
+        <BiLogoCss3 key={4} size={20} />,
+        <BiLogoFigma key={5} size={20} />,
       ],
     },
     {
@@ -198,9 +204,9 @@ export function App() {
       urlSite: 'https://brunopp00.github.io/design-system/',
       urlGitHub: 'https://github.com/brunopp00/design-system',
       icons: [
-        <BiLogoReact key={1} />,
-        <SiStorybook key={1} />,
-        <BiLogoFigma key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <SiStorybook key={2} size={20} />,
+        <BiLogoFigma key={3} size={20} />,
       ],
     },
     {
@@ -212,12 +218,12 @@ export function App() {
       urlSite: 'https://ignite-call-livid-alpha.vercel.app/',
       urlGitHub: 'https://github.com/brunopp00/ignite-call',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoTypescript key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
-        <TbBrandNextjs key={1} />,
-        <BiLogoFigma key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoTypescript key={2} size={20} />,
+        <BiLogoHtml5 key={3} size={20} />,
+        <BiLogoCss3 key={4} size={20} />,
+        <TbBrandNextjs key={5} size={20} />,
+        <BiLogoFigma key={6} size={20} />,
       ],
     },
     {
@@ -229,11 +235,38 @@ export function App() {
       urlSite: 'https://esgotamento-sanitario.vercel.app/',
       urlGitHub: 'https://github.com/brunopp00/esgotamento-sanitario',
       icons: [
-        <BiLogoReact key={1} />,
-        <BiLogoJavascript key={1} />,
-        <BiLogoHtml5 key={1} />,
-        <BiLogoCss3 key={1} />,
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoJavascript key={2} size={20} />,
+        <BiLogoHtml5 key={3} size={20} />,
+        <BiLogoCss3 key={4} size={20} />,
       ],
+    },
+  ]
+
+  const listaContatos = [
+    {
+      title: 'E-mail',
+      description: 'brunofnh08@gmail.com',
+      icon: <HiOutlineMail size={25} />,
+      link: '',
+    },
+    {
+      title: 'Telefone',
+      description: '(51) 99918-7010',
+      icon: <BsTelephone size={25} />,
+      link: 'https://wa.me/55999187010',
+    },
+    {
+      title: 'Linkedin',
+      description: '@bruno-frohlich',
+      icon: <BiLogoLinkedin size={25} />,
+      link: 'https://www.linkedin.com/in/bruno-frohlich-444b06234/',
+    },
+    {
+      title: 'GitHub',
+      description: '@brunopp00',
+      icon: <BiLogoGithub size={25} />,
+      link: 'https://github.com/brunopp00',
     },
   ]
 
@@ -248,7 +281,7 @@ export function App() {
       <About />
       <Abilities />
       <Projects id="projetos" listaProjetos={listaProjetos} />
-      <Contatos />
+      <Contatos contatos={listaContatos} />
     </div>
   )
 }
