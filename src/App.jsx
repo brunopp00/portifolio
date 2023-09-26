@@ -2,138 +2,239 @@ import { Header } from './components/Header'
 import './app.css'
 import { Home } from './components/Home/Home'
 import { Projects } from './components/Projects'
-import CapaIgniteShop from './assets/CapaIgniteShop.png'
-import CapaIgniteBlog from './assets/CapaIgniteBlog.png'
-import CapaIgniteCoffee from './assets/CapaIgniteCoffee.png'
-import CapaIgniteDtMoney from './assets/CapaIgniteDtMoney.png'
-import CapaIgniteTimer from './assets/CapaIgniteTimer.png'
-import CapaIgniteToDoList from './assets/CapaIgniteToDoList.png'
-import CapaPokedex from './assets/CapaPokedéx.png'
-import CapaPrevisaoTempo from './assets/CapaPrevisaoTempo.png'
-import CapaProjetoAndroid from './assets/CapaProjetoAndroid.png'
-import CapaIgniteFeed from './assets/CapaIgniteFeed.png'
-import CapaDesingSystem from './assets/CapaDesingSystem.png'
-import CapaIgniteCall from './assets/CapaIgniteCall.png'
-import CapaEsgotamento from './assets/Capa-Esgotamento.png'
-import CapaMensalidades from './assets/CapaMensalidades.png'
+import PreviewIgniteCoffee from './assets-preview/coffee.png'
+import PreviewPokedex from './assets-preview/pokedex.png'
+import PreviewPrevisao from './assets-preview/previsao-tempo.png'
+import PreviewDtMoney from './assets-preview/dtmoney.png'
+import PreviewIgniteTimer from './assets-preview/ignite-timer.png'
+import PreviewIgniteTodo from './assets-preview/ignite-todo.png'
+import PreviewAndroid from './assets-preview/android.png'
+import PreviewIgniteFeed from './assets-preview/ignite-feed.png'
+import PreviewDesign from './assets-preview/design-system.png'
+import PreviewIgniteCall from './assets-preview/ignite-call.png'
+import PreviewEsgotamento from './assets-preview/esgotamento.png'
+import PreviewIgniteShop from './assets-preview/ignite-shop.png'
+import PreviewIgniteBlog from './assets-preview/ignite-blog.png'
+
+import {
+  BiLogoCss3,
+  BiLogoFigma,
+  BiLogoHtml5,
+  BiLogoJavascript,
+  BiLogoNodejs,
+  BiLogoReact,
+  BiLogoTypescript,
+} from 'react-icons/bi'
+
+import { SiStorybook } from 'react-icons/si'
+import { TbBrandNextjs } from 'react-icons/tb'
 import { About } from './components/About'
 import { Contatos } from './components/Contatos'
 import { Abilities } from './components/Abilities'
 
 export function App() {
   const listaProjetos = [
-    [
-      1,
-      'Ignite Shop',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaIgniteShop,
-      '',
-      'https://github.com/brunopp00/Ignite-Shop',
-    ],
-    [
-      2,
-      'Ignite Blog',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaIgniteBlog,
-      '',
-      'https://github.com/brunopp00/GitHub-Blog',
-    ],
-    [
-      3,
-      'Ignite Coffee',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaIgniteCoffee,
-      'https://02-desafio-ignite-reactjs.vercel.app/',
-      'https://github.com/brunopp00/Coffe-Delivery',
-    ],
-    [
-      4,
-      'Pokedéx',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaPokedex,
-      'https://brunopp00.github.io/pokedex/',
-      'https://github.com/brunopp00/pokedex',
-    ],
-    [
-      5,
-      'Previsão Tempo',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaPrevisaoTempo,
-      'https://brunopp00.github.io/previsaodotempo/',
-      'https://github.com/brunopp00/previsaodotempo',
-    ],
-    [
-      7,
-      'Ignite DtMoney',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaIgniteDtMoney,
-      'https://03-modulo-ignite-reactjs.vercel.app/',
-      'https://github.com/brunopp00/DT-Money',
-    ],
-    [
-      9,
-      'Ignite Timer',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaIgniteTimer,
-      'https://02-ignite-timer-seven.vercel.app/',
-      'https://github.com/brunopp00/Ignite-Timer',
-    ],
-    [
-      10,
-      'Ignite ToDoList',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaIgniteToDoList,
-      'https://desafio-modulo1-ignite-reactjs.vercel.app/',
-      'https://github.com/brunopp00/Todo-list',
-    ],
-    [
-      12,
-      'Projeto Android',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaProjetoAndroid,
-      'https://brunopp00.github.io/projeto-android/',
-      'https://github.com/brunopp00/projeto-android',
-    ],
-    [
-      13,
-      'Ignite Feed',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaIgniteFeed,
-      'https://ignite-modulo-01.vercel.app/',
-      'https://github.com/brunopp00/Ignite-Feed',
-    ],
-    [
-      15,
-      'Design System',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaDesingSystem,
-      'https://github.com/brunopp00/design-system',
-      'https://brunopp00.github.io/design-system/',
-    ],
-    [
-      16,
-      'Ignite Call',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaIgniteCall,
-      'https://ignite-call-livid-alpha.vercel.app/',
-      'https://github.com/brunopp00/ignite-call',
-    ],
-    [
-      17,
-      'Esgotamento',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaEsgotamento,
-      'https://esgotamento-sanitario.vercel.app/',
-      'https://github.com/brunopp00/esgotamento-sanitario',
-    ],
-    [
-      18,
-      'Mensalidades',
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
-      CapaMensalidades,
-      'https://mensalidades-production.up.railway.app/',
-      'https://github.com/brunopp00/mensalidades',
-    ],
+    {
+      id: 1,
+      name: 'Ignite Shop',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewIgniteShop,
+      urlSite: '',
+      urlGitHub: 'https://github.com/brunopp00/Ignite-Shop',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoNodejs key={1} />,
+        <BiLogoTypescript key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+        <TbBrandNextjs key={1} />,
+        <BiLogoFigma key={1} />,
+      ],
+    },
+    {
+      id: 2,
+      name: 'Ignite Blog',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewIgniteBlog,
+      urlSite: '',
+      urlGitHub: 'https://github.com/brunopp00/GitHub-Blog',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoNodejs key={1} />,
+        <BiLogoTypescript key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+        <BiLogoFigma key={1} />,
+      ],
+    },
+    {
+      id: 3,
+      name: 'Ignite Coffee',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewIgniteCoffee,
+      urlSite: 'https://02-desafio-ignite-reactjs.vercel.app/',
+      urlGitHub: 'https://github.com/brunopp00/Coffe-Delivery',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoJavascript key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+        <BiLogoFigma key={1} />,
+      ],
+    },
+    {
+      id: 4,
+      name: 'Pokedéx',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewPokedex,
+      urlSite: 'https://brunopp00.github.io/pokedex/',
+      urlGitHub: 'https://github.com/brunopp00/pokedex',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+      ],
+    },
+    {
+      id: 5,
+      name: 'Previsão Tempo',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewPrevisao,
+      urlSite: 'https://brunopp00.github.io/previsaodotempo/',
+      urlGitHub: 'https://github.com/brunopp00/previsaodotempo',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={2} />,
+      ],
+    },
+    {
+      id: 7,
+      name: 'Ignite DtMoney',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewDtMoney,
+      urlSite: 'https://03-modulo-ignite-reactjs.vercel.app/',
+      urlGitHub: 'https://github.com/brunopp00/DT-Money',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoNodejs key={1} />,
+        <BiLogoTypescript key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+        <TbBrandNextjs key={1} />,
+        <BiLogoFigma key={1} />,
+      ],
+    },
+    {
+      id: 9,
+      name: 'Ignite Timer',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewIgniteTimer,
+      urlSite: 'https://02-ignite-timer-seven.vercel.app/',
+      urlGitHub: 'https://github.com/brunopp00/Ignite-Timer',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoTypescript key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+        <BiLogoFigma key={1} />,
+      ],
+    },
+    {
+      id: 10,
+      name: 'Ignite ToDoList',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewIgniteTodo,
+      urlSite: 'https://desafio-modulo1-ignite-reactjs.vercel.app/',
+      urlGitHub: 'https://github.com/brunopp00/Todo-list',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoJavascript key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+        <BiLogoFigma key={1} />,
+      ],
+    },
+    {
+      id: 12,
+      name: 'Projeto Android',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewAndroid,
+      urlSite: 'https://brunopp00.github.io/projeto-android/',
+      urlGitHub: 'https://github.com/brunopp00/projeto-android',
+      icons: [<BiLogoHtml5 key={1} />, <BiLogoCss3 key={1} />],
+    },
+    {
+      id: 13,
+      name: 'Ignite Feed',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewIgniteFeed,
+      urlSite: 'https://ignite-modulo-01.vercel.app/',
+      urlGitHub: 'https://github.com/brunopp00/Ignite-Feed',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoJavascript key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+        <BiLogoFigma key={1} />,
+      ],
+    },
+    {
+      id: 15,
+      name: 'Design System',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewDesign,
+      urlSite: 'https://brunopp00.github.io/design-system/',
+      urlGitHub: 'https://github.com/brunopp00/design-system',
+      icons: [
+        <BiLogoReact key={1} />,
+        <SiStorybook key={1} />,
+        <BiLogoFigma key={1} />,
+      ],
+    },
+    {
+      id: 16,
+      name: 'Ignite Call',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewIgniteCall,
+      urlSite: 'https://ignite-call-livid-alpha.vercel.app/',
+      urlGitHub: 'https://github.com/brunopp00/ignite-call',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoTypescript key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+        <TbBrandNextjs key={1} />,
+        <BiLogoFigma key={1} />,
+      ],
+    },
+    {
+      id: 17,
+      name: 'Esgotamento',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewEsgotamento,
+      urlSite: 'https://esgotamento-sanitario.vercel.app/',
+      urlGitHub: 'https://github.com/brunopp00/esgotamento-sanitario',
+      icons: [
+        <BiLogoReact key={1} />,
+        <BiLogoJavascript key={1} />,
+        <BiLogoHtml5 key={1} />,
+        <BiLogoCss3 key={1} />,
+      ],
+    },
   ]
 
   function handleClickMenu(menu) {

@@ -28,21 +28,19 @@ export const Abilities = () => {
   return (
     <div id="abilities" className="h-full w-full">
       <div className="w-full">
-        <h1 className="text-violet-600 text-center font-tilt-warp">
-          Habilidades
-        </h1>
+        <h1 className="text-default text-center font-tilt-warp">Habilidades</h1>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 p-5">
         {abilitiesList.map((item) => {
           return (
             <div
               key={item.name}
-              className="w-[85%] h-full p-5 bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-violet-800 transform transition-transform  hover:scale-110"
+              className="w-[85%] h-full p-5 bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-default transform transition-transform  hover:scale-110"
             >
               <div>
-                <p className="text-violet-600 text-lg">{item.name}</p>
+                <p className="text-default text-lg">{item.name}</p>
               </div>
-              <div className="text-violet-600">{item.icon}</div>
+              <div className="text-default">{item.icon}</div>
             </div>
           )
         })}

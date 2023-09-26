@@ -38,7 +38,7 @@ export function Home() {
         <h1 className="font-tilt-warp text-white">
           Olá, Me chamo Bruno Fröhlich
         </h1>
-        <h1 className="font-tilt-warp text-violet-600">
+        <h1 className="font-tilt-warp text-default">
           Desenvolvedor
           <div className="animation-text">
             <span id="animation-word" className="animation-word">
