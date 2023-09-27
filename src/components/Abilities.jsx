@@ -31,14 +31,16 @@ export const Abilities = () => {
   return (
     <div id="abilities" className="h-full w-full mt-20">
       <div className="w-full">
-        <h1 className="text-white text-center font-tilt-warp">Habilidades</h1>
+        <h1 className="text-zinc-700 dark:text-white text-center font-tilt-warp">
+          Habilidades
+        </h1>
       </div>
       <div className="grid grid-cols-2 gap-5 lg:grid-cols-8 pl-16 pr-16">
         {abilitiesList.map((item) => {
           return (
             <div
               key={item.name}
-              className="w-[100%] gap-3 h-full p-5 bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-default transform transition-transform  hover:scale-110"
+              className="w-[100%] gap-3 h-full p-5 bg-slate-300 dark:bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-default transform transition-transform  hover:scale-110"
             >
               <div>
                 <p className="text-default text-justify">{item.name}</p>

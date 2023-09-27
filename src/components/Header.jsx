@@ -11,22 +11,30 @@ const buttonsList = [
 
 export function Header({ handleClickMenu }) {
   const [isOpen, setIsOpen] = useState(false)
+
   return (
     <header className="h-3 w-full z-10 fixed">
-      <div className="bg-zinc-800 h-1/2 flex justify-between items-center p-7">
+      <div className="bg-white dark:bg-zinc-800 h-1/2 flex justify-between items-center p-7">
         <h1
           className="p-0 cursor-pointer font-tilt-warp text-default"
           onClick={() => handleClickMenu('menu')}
         >
           Bruno Frohlich
         </h1>
-        <MenuOutlined
-          className="text-default cursor-pointer"
-          onClick={() => setIsOpen(true)}
-        />
+        <div className="flex items-center gap-4">
+          {/* <SwitchRoot onCheckedChange={changeTheme}>
+            <SwitchThumb>
+              {theme === 'light' ? <BsFillSunFill /> : <BsFillMoonFill />}
+            </SwitchThumb>
+          </SwitchRoot> */}
+          <MenuOutlined
+            className="text-default cursor-pointer"
+            onClick={() => setIsOpen(true)}
+          />
+        </div>
       </div>
       <Drawer anchor={'right'} open={isOpen} onClose={() => setIsOpen(false)}>
-        <div className="p-5 h-screen flex flex-col bg-zinc-800">
+        <div className="p-5 h-screen flex flex-col bg-slate-300 dark:bg-zinc-800">
           {buttonsList.map((item) => (
             <>
               <button
@@ -46,3 +54,34 @@ export function Header({ handleClickMenu }) {
     </header>
   )
 }
+
+// export const SwitchRoot = styled(Switch.Root)`
+//   cursor: pointer;
+//   width: 50px;
+//   height: 27px;
+//   border-radius: 9999px;
+//   position: relative;
+//   border: 2px solid skyblue;
+//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// `
+
+// export const SwitchThumb = styled(Switch.Thumb)`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 21px;
+//   height: 21px;
+//   border: 0;
+//   background-color: transparent;
+//   color: lightgray;
+//   border-radius: 9999px;
+//   transition: transform 100ms;
+//   transform: translateX(2px);
+//   will-change: transform;
+
+//   &[data-state='checked'] {
+//     background-color: gray;
+//     transform: translateX(23px);
+//     color: yellow;
+//   }
+// `
