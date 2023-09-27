@@ -34,11 +34,11 @@ export function Header({ handleClickMenu }) {
         </div>
       </div>
       <Drawer anchor={'right'} open={isOpen} onClose={() => setIsOpen(false)}>
-        <div className="p-5 h-screen flex flex-col bg-slate-300 dark:bg-zinc-800">
+        <div className="p-5 h-screen flex flex-col bg-white dark:bg-zinc-800">
           {buttonsList.map((item) => (
             <>
               <button
-                className="w-48 text-default p-3 transition-opacity rounded-lg hover:opacity-10"
+                className="w-48 text-default p-3 transition-opacity hover:opacity-10 border-b-[1px] border-default"
                 key={item.id}
                 onClick={() => {
                   setIsOpen(false)
