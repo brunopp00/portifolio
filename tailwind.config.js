@@ -7,7 +7,9 @@ export default {
         'tilt-warp': ['Tilt Warp', 'cursive'],
         roboto: ['Roboto', 'sans-serif'],
       },
-      backgroundColor: {},
+      backgroundColor: {
+        default: 'rgb(14 165 233)'
+      },
       textColor: {
         default: 'rgb(14 165 233)',
       },

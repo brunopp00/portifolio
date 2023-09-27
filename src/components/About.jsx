@@ -3,7 +3,7 @@ import fotoBruno from '../assets/foto-bruno2.jpeg'
 export function About() {
   return (
     <div className="w-full h-full" id="sobre">
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-4/5 bg-slate-300 dark:bg-zinc-800 m-10 rounded-xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 h-4/5 bg-default dark:bg-zinc-800 m-10 rounded-xl">
         <div className="flex justify-center items-center mt-5 lg:mt-0">
           <img
             className="rounded-lg w-[45%] h-[90%] lg:w-[80%] lg:h-[80%] object-fill "
@@ -12,10 +12,10 @@ export function About() {
           />
         </div>
         <div className="flex w-full h-full flex-col justify-center p-10">
-          <h1 className=" text-zinc-700 dark:text-white font-tilt-warp text-center  lg:text-start">
+          <h1 className=" text-white font-tilt-warp text-center  lg:text-start">
             Sobre Mim
           </h1>
-          <p className="font-tilt-warp text-center text-zinc-600 dark:text-white text-xs lg:text-sm lg:text-start">
+          <p className="font-tilt-warp text-center text-white text-xs lg:text-sm lg:text-start">
             Meu nome é Bruno Fröhlich, nasci em 4 de fevereiro de 2006. Desde
             muito cedo, desenvolver e programar se tornaram minhas paixões. Sou
             um programador com conhecimento em várias linguagens e tecnologias,

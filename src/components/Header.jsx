@@ -14,9 +14,9 @@ export function Header({ handleClickMenu }) {
 
   return (
     <header className="h-3 w-full z-10 fixed">
-      <div className="bg-white dark:bg-zinc-800 h-1/2 flex justify-between items-center p-7">
+      <div className="bg-default dark:bg-zinc-800 border-b-2 border-default dark:border-0 h-1/2 flex justify-between items-center p-7">
         <h1
-          className="p-0 cursor-pointer font-tilt-warp text-default"
+          className="p-0 cursor-pointer font-tilt-warp dark:text-default text-white"
           onClick={() => handleClickMenu('menu')}
         >
           Bruno Frohlich
@@ -28,7 +28,7 @@ export function Header({ handleClickMenu }) {
             </SwitchThumb>
           </SwitchRoot> */}
           <MenuOutlined
-            className="text-default cursor-pointer"
+            className="text-white dark:text-default cursor-pointer"
             onClick={() => setIsOpen(true)}
           />
         </div>
