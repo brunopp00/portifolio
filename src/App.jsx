@@ -255,7 +255,7 @@ export function App() {
       title: 'Telefone',
       description: '(51) 99918-7010',
       icon: <BsTelephone size={25} />,
-      link: 'https://wa.me/55999187010',
+      link: 'https://wa.me/5551999187010',
     },
     {
       title: 'Linkedin',
