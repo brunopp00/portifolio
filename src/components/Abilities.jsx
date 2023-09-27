@@ -43,7 +43,7 @@ export const Abilities = () => {
               className="w-[100%] gap-3 h-full p-5 bg-slate-300 dark:bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-default transform transition-transform  hover:scale-110"
             >
               <div>
-                <p className="text-default text-justify">{item.name}</p>
+                <p className="text-default sm:text-sm">{item.name}</p>
               </div>
               <div className="text-default">{item.icon}</div>
             </div>
