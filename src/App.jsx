@@ -15,6 +15,7 @@ import PreviewIgniteCall from './assets-preview/ignite-call.png'
 import PreviewEsgotamento from './assets-preview/esgotamento.png'
 import PreviewIgniteShop from './assets-preview/ignite-shop.png'
 import PreviewIgniteBlog from './assets-preview/ignite-blog.png'
+import PreviewSpotify from './assets-preview/spotify.png'
 
 import {
   BiLogoCss3,
@@ -240,6 +241,22 @@ export function App() {
         <BiLogoJavascript key={2} size={20} />,
         <BiLogoHtml5 key={3} size={20} />,
         <BiLogoCss3 key={4} size={20} />,
+      ],
+    },
+    {
+      id: 18,
+      name: 'Clone Spotify',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+      image: PreviewSpotify,
+      urlSite: 'https://clone-spotify-sage.vercel.app/',
+      urlGitHub: 'https://github.com/brunopp00/clone-spotify',
+      icons: [
+        <BiLogoReact key={1} size={20} />,
+        <BiLogoJavascript key={2} size={20} />,
+        <BiLogoTypescript key={3} size={20} />,
+        <BiLogoHtml5 key={4} size={20} />,
+        <BiLogoCss3 key={5} size={20} />,
       ],
     },
   ]

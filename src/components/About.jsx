@@ -3,7 +3,7 @@ import fotoBruno from '../assets/foto-bruno2.jpeg'
 export function About() {
   return (
     <div className="w-full h-full" id="sobre">
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-4/5 bg-default dark:bg-zinc-800 m-10 rounded-xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 h-4/5 bg-zinc-800 m-10 rounded-xl">
         <div className="flex justify-center items-center mt-5 lg:mt-0">
           <img
             className="rounded-lg w-[45%] h-[90%] lg:w-[80%] lg:h-[80%] object-fill "

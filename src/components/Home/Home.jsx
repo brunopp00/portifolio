@@ -35,7 +35,7 @@ export function Home() {
       id="menu"
     >
       <div className="text-center lg:text-end w-full">
-        <h1 className="font-tilt-warp text-zinc-700 dark:text-white">
+        <h1 className="font-tilt-warp text-white">
           Olá, Me chamo Bruno Fröhlich
         </h1>
         <h1 className="font-tilt-warp text-default">
