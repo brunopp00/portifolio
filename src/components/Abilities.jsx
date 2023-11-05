@@ -29,9 +29,11 @@ export const Abilities = () => {
     { name: 'Figma', icon: <BiLogoFigma size={35} /> },
   ]
   return (
-    <div id="abilities" className="h-full w-full mt-20">
+    <div id="abilities" className="h-full w-full mt-20 flex flex-col gap-5">
       <div className="w-full">
-        <h1 className="text-white text-center font-tilt-warp">Habilidades</h1>
+        <h1 className="text-white text-3xl text-center font-tilt-warp">
+          Habilidades
+        </h1>
       </div>
       <div className="grid grid-cols-2 gap-5 lg:grid-cols-8 pl-16 pr-16">
         {abilitiesList.map((item) => {

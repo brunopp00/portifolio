@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import fotoBruno from '../../assets/Foto-Bruno-trasparente.png'
 import './styles.css'
 
 export function Home() {
@@ -30,11 +29,8 @@ export function Home() {
   }, [index])
 
   return (
-    <div
-      className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center h-screen w-full p-10 "
-      id="menu"
-    >
-      <div className="text-center lg:text-end w-full">
+    <div className="h-screen w-full flex items-center justify-center" id="menu">
+      <div className="text-center w-full text-2xl">
         <h1 className="font-tilt-warp text-white">
           Olá, Me chamo Bruno Fröhlich
         </h1>
@@ -46,13 +42,6 @@ export function Home() {
             </span>
           </div>
         </h1>
-      </div>
-      <div className="w-full flex justify-center">
-        <img
-          className="h-1/2 w-1/2 bg-transparent rounded-full border-solid border-transparent border-spacing-1"
-          src={fotoBruno}
-          alt=""
-        />
       </div>
     </div>
   )

@@ -36,8 +36,8 @@ export const ItemProject = ({ projeto }) => {
       <div className="p-16 gap-3 w-full h-full z-10 bg-zinc-950 bg-opacity-50 flex flex-col items-center justify-center border-b-4 border-default">
         {showInfo ? (
           <>
-            <div className="text-white sm:text-sm text-[1.2rem] font-bold">
-              <p>{projeto.name}</p>
+            <div>
+              <p className="text-white text-2xl font-bold">{projeto.name}</p>
             </div>
             <div className="flex text-sky-500">
               {projeto.icons.map((icon) => {

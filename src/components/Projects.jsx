@@ -3,10 +3,13 @@ import { ItemProject } from './ItemProject'
 
 export function Projects({ listaProjetos }) {
   return (
-    <div className="h-full justify-center mt-20" id="projetos">
+    <div
+      className="h-full justify-center mt-20 flex flex-col gap-5"
+      id="projetos"
+    >
       <div className="w-full text-center ">
-        <h1 className="font-tilt-warp text-white">Projetos</h1>
-        <h1 className="font-tilt-warp text-white text-lg">
+        <h1 className="font-tilt-warp text-3xl text-white">Projetos</h1>
+        <h1 className="font-tilt-warp text-2xl text-white">
           Programas que desenvolvi ao longo do tempo
         </h1>
       </div>
