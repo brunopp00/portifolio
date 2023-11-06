@@ -1,12 +1,10 @@
 import React from 'react'
 import { ItemProject } from './ItemProject'
+import { Reveal } from './Reveal'
 
 export function Projects({ listaProjetos }) {
   return (
-    <div
-      className="h-full justify-center mt-20 flex flex-col gap-5"
-      id="projetos"
-    >
+    <Reveal className="h-full justify-center flex flex-col gap-5" id="projetos">
       <div className="w-full text-center ">
         <h1 className="font-tilt-warp text-3xl text-white">Projetos</h1>
         <h1 className="font-tilt-warp text-2xl text-white">
@@ -18,6 +16,6 @@ export function Projects({ listaProjetos }) {
           <ItemProject projeto={projeto} key={projeto.id} />
         ))}
       </div>
-    </div>
+    </Reveal>
   )
 }

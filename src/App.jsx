@@ -35,7 +35,6 @@ import { TbBrandNextjs } from 'react-icons/tb'
 import { About } from './components/About'
 import { Contatos } from './components/Contatos'
 import { Abilities } from './components/Abilities'
-import { ContextProvider } from './context/AppContext'
 
 export function App() {
   const listaProjetos = [
@@ -293,13 +292,13 @@ export function App() {
     element.scrollIntoView()
   }
   return (
-    <ContextProvider>
+    <div className="flex flex-col gap-40">
       <Header handleClickMenu={handleClickMenu} />
       <Home id="menu" />
       <About />
       <Abilities />
       <Projects id="projetos" listaProjetos={listaProjetos} />
       <Contatos contatos={listaContatos} />
-    </ContextProvider>
+    </div>
   )
 }

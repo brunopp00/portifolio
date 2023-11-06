@@ -1,9 +1,10 @@
 import React from 'react'
+import { Reveal } from './Reveal'
 
 export function Contatos({ contatos }) {
   return (
-    <div id="contatos" className="flex flex-col gap-5 mb-20">
-      <div className="w-full text-center mt-28">
+    <Reveal id="contatos" className="flex flex-col gap-5 mb-20">
+      <div className="w-full text-center">
         <h1 className="font-tilt-warp text-white text-3xl">Contatos</h1>
       </div>
       <div className="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-4 pl-32 pr-32">
@@ -29,6 +30,6 @@ export function Contatos({ contatos }) {
           )
         })}
       </div>
-    </div>
+    </Reveal>
   )
 }

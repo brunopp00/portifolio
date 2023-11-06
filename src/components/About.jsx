@@ -1,8 +1,9 @@
 import React from 'react'
 import fotoBruno from '../assets/foto-bruno2.jpeg'
+import { Reveal } from './Reveal'
 export function About() {
   return (
-    <div className="w-full h-full" id="sobre">
+    <Reveal className="w-full h-full" id="sobre">
       <div className="grid grid-cols-1 lg:grid-cols-2 m-10">
         <div className="flex justify-center items-center">
           <img className="rounded-full  object-fill " src={fotoBruno} alt="" />
@@ -35,6 +36,6 @@ export function About() {
           </ul>
         </div>
       </div>
-    </div>
+    </Reveal>
   )
 }

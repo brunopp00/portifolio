@@ -12,6 +12,7 @@ import {
 } from 'react-icons/bi'
 import { SiStorybook } from 'react-icons/si'
 import React from 'react'
+import { Reveal } from './Reveal'
 
 export const Abilities = () => {
   const abilitiesList = [
@@ -29,12 +30,10 @@ export const Abilities = () => {
     { name: 'Figma', icon: <BiLogoFigma size={35} /> },
   ]
   return (
-    <div id="abilities" className="h-full w-full mt-20 flex flex-col gap-5">
-      <div className="w-full">
-        <h1 className="text-white text-3xl text-center font-tilt-warp">
-          Habilidades
-        </h1>
-      </div>
+    <Reveal id="abilities" className="flex flex-col gap-10">
+      <h1 className="text-white text-3xl text-center font-tilt-warp">
+        Habilidades
+      </h1>
       <div className="grid grid-cols-2 gap-5 lg:grid-cols-8 pl-16 pr-16">
         {abilitiesList.map((item) => {
           return (
@@ -50,6 +49,6 @@ export const Abilities = () => {
           )
         })}
       </div>
-    </div>
+    </Reveal>
   )
 }
