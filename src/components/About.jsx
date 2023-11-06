@@ -20,7 +20,8 @@ export function About() {
             </li>
             <li>
               <p className="font-tilt-warp text-white text-xs lg:text-xl text-start">
-                🎓 Cursando Análise e Desenvolvimento de Sistemas
+                🎓 Ano que vem começarei no curso de Análise e Desenvolvimento
+                de Sistemas
               </p>
             </li>
             <li>
