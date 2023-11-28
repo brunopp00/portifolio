@@ -1,10 +1,7 @@
-# portifolio
-Descrição:
-Este projeto é um clone da interface do usuário do Spotify, desenvolvido em React.js e estilizado com Tailwind CSS. Embora não inclua funcionalidades avançadas, é uma demonstração prática de como criar uma interface atraente usando tecnologias modernas.
+# Portifolio
+Meu portfólio pessoal desenvolvido em React.js e estilizado com Tailwind CSS. Este projeto apresenta informações sobre mim, minhas habilidades e projetos anteriores.
 
-Instruções de Uso:
-Clone este repositório: git clone https://github.com/seu-usuario/clone-spotify.git
-Navegue até o diretório do projeto: cd clone-spotify
-Instale as dependências: npm install
-Execute o projeto: npm start
-Explore o código-fonte e experimente modificar a interface para praticar suas habilidades em React.js e Tailwind CSS.
+Acesso ao Portfólio:
+[Visualize meu portfólio aqui](https://portifolio-lime-six.vercel.app/)
+
+Sinta-se à vontade para explorar e aprender mais sobre meu trabalho.
