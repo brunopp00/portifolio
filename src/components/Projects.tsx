@@ -36,7 +36,10 @@ export function Projects({ listaProjetos }: ProjectsProps) {
       >
         <CarouselContent>
           {listaProjetos.map((projeto) => (
-            <CarouselItem className="lg:basis-1/4" key={projeto.id}>
+            <CarouselItem
+              className="lg:basis-1/4 md:basis-1/2"
+              key={projeto.id}
+            >
               <ItemProject projeto={projeto} />
             </CarouselItem>
           ))}

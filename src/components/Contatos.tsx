@@ -15,7 +15,7 @@ export function Contatos({ contatos }: ContatosProps) {
       <div className="w-full text-center mb-10">
         <h1 className="font-tilt-warp text-white text-3xl">Contatos</h1>
       </div>
-      <div className="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-4 pl-32 pr-32">
+      <div className="flex flex-col justify-center gap-4 lg:justify-around lg:gap-0 lg:flex-row">
         {contatos.map((contato) => {
           return (
             <div

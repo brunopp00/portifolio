@@ -12,6 +12,13 @@ import {
 } from 'react-icons/bi'
 import { SiStorybook } from 'react-icons/si'
 import Reveal from './Reveal'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel'
 
 export const Abilities = () => {
   const abilitiesList = [
@@ -33,21 +40,32 @@ export const Abilities = () => {
       <h1 className="text-white text-3xl text-center font-tilt-warp mb-10">
         Habilidades
       </h1>
-      <div className="grid grid-cols-2 gap-5 lg:grid-cols-8">
-        {abilitiesList.map((item) => {
-          return (
-            <div
-              key={item.name}
-              className="w-[100%] gap-3 h-full p-5 bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-default transform transition-transform  hover:scale-110"
-            >
-              <div>
-                <p className="text-default sm:text-sm">{item.name}</p>
-              </div>
-              <div className="text-default">{item.icon}</div>
-            </div>
-          )
-        })}
-      </div>
+      <Carousel
+        className="w-full"
+        opts={{
+          align: 'start',
+        }}
+      >
+        <CarouselContent>
+          {abilitiesList.map((item) => {
+            return (
+              <CarouselItem
+                key={item.name}
+                className="lg:basis-1/6 md:basis-1/2"
+              >
+                <div className="w-[100%] gap-3 h-full p-5 bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-default">
+                  <div>
+                    <p className="text-default sm:text-sm">{item.name}</p>
+                  </div>
+                  <div className="text-default">{item.icon}</div>
+                </div>
+              </CarouselItem>
+            )
+          })}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </Reveal>
   )
 }
