@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './styles.css'
 
 export function Home() {
-  const words = ['Front-end', 'Back-end'] // Adicione mais palavras se desejar
+  const words = ['Front-end', 'Back-end'] // Add more words if desired
   const [index, setIndex] = useState(0)
   const [currentWord, setCurrentWord] = useState(words[0])
 
@@ -18,7 +18,7 @@ export function Home() {
   }, [])
 
   useEffect(() => {
-    const wordElement = document.getElementById('animation-word')
+    const wordElement = document.getElementById('animation-word')!
     wordElement.classList.remove('active')
 
     setTimeout(() => {

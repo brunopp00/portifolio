@@ -1,6 +1,5 @@
-import React from 'react'
 import fotoBruno from '../assets/foto-bruno2.jpeg'
-import { Reveal } from './Reveal'
+import Reveal from './Reveal'
 export function About() {
   return (
     <Reveal className="w-full h-full" id="sobre">

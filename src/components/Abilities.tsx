@@ -11,8 +11,7 @@ import {
   BiLogoTypescript,
 } from 'react-icons/bi'
 import { SiStorybook } from 'react-icons/si'
-import React from 'react'
-import { Reveal } from './Reveal'
+import Reveal from './Reveal'
 
 export const Abilities = () => {
   const abilitiesList = [
@@ -31,10 +30,10 @@ export const Abilities = () => {
   ]
   return (
     <Reveal id="abilities" className="flex flex-col gap-10">
-      <h1 className="text-white text-3xl text-center font-tilt-warp">
+      <h1 className="text-white text-3xl text-center font-tilt-warp mb-10">
         Habilidades
       </h1>
-      <div className="grid grid-cols-2 gap-5 lg:grid-cols-8 pl-16 pr-16">
+      <div className="grid grid-cols-2 gap-5 lg:grid-cols-8">
         {abilitiesList.map((item) => {
           return (
             <div

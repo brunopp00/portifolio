@@ -1,10 +1,18 @@
-import React from 'react'
-import { Reveal } from './Reveal'
+import Reveal from './Reveal'
 
-export function Contatos({ contatos }) {
+interface ContatosProps {
+  contatos: {
+    title: string
+    description: string
+    icon: JSX.Element
+    link: string
+  }[]
+}
+
+export function Contatos({ contatos }: ContatosProps) {
   return (
     <Reveal id="contatos" className="flex flex-col gap-5 mb-20">
-      <div className="w-full text-center">
+      <div className="w-full text-center mb-10">
         <h1 className="font-tilt-warp text-white text-3xl">Contatos</h1>
       </div>
       <div className="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-4 pl-32 pr-32">

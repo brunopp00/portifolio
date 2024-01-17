@@ -1,8 +1,14 @@
-import { useEffect, useRef } from 'react'
+import React, { ReactNode, useEffect, useRef } from 'react'
 import { useInView, motion, useAnimation } from 'framer-motion'
 
-export const Reveal = ({ children, className }, ...props) => {
-  const ref = useRef(null)
+interface RevealProps {
+  children: ReactNode
+  className?: string
+  id?: string
+}
+
+const Reveal: React.FC<RevealProps> = ({ children, className, ...props }) => {
+  const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true })
 
   const mainControls = useAnimation()
@@ -30,3 +36,5 @@ export const Reveal = ({ children, className }, ...props) => {
     </div>
   )
 }
+
+export default Reveal

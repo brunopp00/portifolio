@@ -1,16 +1,19 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { BiLinkExternal, BiLogoGithub } from 'react-icons/bi'
 
-export const ItemProject = ({ projeto }) => {
+interface ItemProjectProps {
+  projeto: {
+    id: number
+    name: string
+    image: string
+    icons: JSX.Element[]
+    urlGitHub: string
+    urlSite?: string
+  }
+}
+
+export const ItemProject = ({ projeto }: ItemProjectProps) => {
   const [showInfo, setShowInfo] = useState(true)
-
-  const handleMouseEnter = () => {
-    setShowInfo(false)
-  }
-
-  const handleMouseLeave = () => {
-    setShowInfo(true)
-  }
 
   const handleGitHubClick = () => {
     window.open(projeto.urlGitHub, '_blank')
@@ -24,9 +27,9 @@ export const ItemProject = ({ projeto }) => {
 
   return (
     <div
-      className="flex flex-col transform transition-transform hover:scale-110"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className="flex flex-col transform transition-transform hover:scale-110 h-48"
+      onMouseEnter={() => setShowInfo(false)}
+      onMouseLeave={() => setShowInfo(true)}
     >
       <img
         className="absolute inset-0 w-full h-full object-cover"
@@ -38,11 +41,6 @@ export const ItemProject = ({ projeto }) => {
           <>
             <div>
               <p className="text-white text-2xl font-bold">{projeto.name}</p>
-            </div>
-            <div className="flex text-sky-500">
-              {projeto.icons.map((icon) => {
-                return icon
-              })}
             </div>
           </>
         ) : (
@@ -65,6 +63,11 @@ export const ItemProject = ({ projeto }) => {
             )}
           </div>
         )}
+        <div className="flex text-sky-500">
+          {projeto.icons.map((icon) => {
+            return icon
+          })}
+        </div>
       </div>
     </div>
   )

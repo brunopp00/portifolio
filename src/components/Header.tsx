@@ -1,6 +1,10 @@
-import { MenuOutlined } from '@mui/icons-material'
 import { Drawer } from '@mui/material'
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { HiMenu } from 'react-icons/hi'
+
+interface HeaderProps {
+  handleClickMenu: (click: string) => void
+}
 
 const buttonsList = [
   { id: 0, text: 'PROJETOS', click: 'projetos' },
@@ -9,12 +13,12 @@ const buttonsList = [
   { id: 3, text: 'CONTATOS', click: 'contatos' },
 ]
 
-export function Header({ handleClickMenu }) {
+export function Header({ handleClickMenu }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header className="h-3 w-full z-10 fixed">
-      <div className="bg-zinc-800 border-0 h-1/2 flex justify-between items-center p-7">
+      <div className="bg-zinc-800 border-0 h-1/2 flex justify-between items-center p-7 pr-[64px] pl-[64px]">
         <h1
           className="p-0 cursor-pointer font-tilt-warp text-default"
           onClick={() => handleClickMenu('menu')}
@@ -27,7 +31,8 @@ export function Header({ handleClickMenu }) {
               {theme === 'light' ? <BsFillSunFill /> : <BsFillMoonFill />}
             </SwitchThumb>
           </SwitchRoot> */}
-          <MenuOutlined
+          <HiMenu
+            size={30}
             className="text-default cursor-pointer"
             onClick={() => setIsOpen(true)}
           />
@@ -54,34 +59,3 @@ export function Header({ handleClickMenu }) {
     </header>
   )
 }
-
-// export const SwitchRoot = styled(Switch.Root)`
-//   cursor: pointer;
-//   width: 50px;
-//   height: 27px;
-//   border-radius: 9999px;
-//   position: relative;
-//   border: 2px solid skyblue;
-//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-// `
-
-// export const SwitchThumb = styled(Switch.Thumb)`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 21px;
-//   height: 21px;
-//   border: 0;
-//   background-color: transparent;
-//   color: lightgray;
-//   border-radius: 9999px;
-//   transition: transform 100ms;
-//   transform: translateX(2px);
-//   will-change: transform;
-
-//   &[data-state='checked'] {
-//     background-color: gray;
-//     transform: translateX(23px);
-//     color: yellow;
-//   }
-// `

@@ -1,7 +1,4 @@
-import { Header } from './components/Header'
-import './app.css'
-import { Home } from './components/Home/Home'
-import { Projects } from './components/Projects'
+import './App.css'
 import PreviewIgniteCoffee from './assets-preview/coffee.png'
 import PreviewPokedex from './assets-preview/pokedex.png'
 import PreviewPrevisao from './assets-preview/previsao-tempo.png'
@@ -32,9 +29,12 @@ import { BsTelephone } from 'react-icons/bs'
 import { HiOutlineMail } from 'react-icons/hi'
 import { SiStorybook } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
-import { About } from './components/About'
-import { Contatos } from './components/Contatos'
 import { Abilities } from './components/Abilities'
+import { About } from './components/About'
+import { Home } from './components/Home/Home'
+import { Header } from './components/Header'
+import { Projects } from './components/Projects'
+import { Contatos } from './components/Contatos'
 
 export function App() {
   const listaProjetos = [
@@ -287,18 +287,20 @@ export function App() {
     },
   ]
 
-  function handleClickMenu(menu) {
-    const element = document.getElementById(menu)
+  function handleClickMenu(menu: string) {
+    const element = document.getElementById(menu)!
     element.scrollIntoView()
   }
   return (
-    <div className="flex flex-col gap-40">
+    <div>
       <Header handleClickMenu={handleClickMenu} />
-      <Home id="menu" />
-      <About />
-      <Abilities />
-      <Projects id="projetos" listaProjetos={listaProjetos} />
-      <Contatos contatos={listaContatos} />
+      <div className="flex flex-col gap-40 pr-[64px] pl-[64px]">
+        <Home />
+        <About />
+        <Abilities />
+        <Projects listaProjetos={listaProjetos} />
+        <Contatos contatos={listaContatos} />
+      </div>
     </div>
   )
 }
