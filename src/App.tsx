@@ -29,12 +29,11 @@ import { BsTelephone } from 'react-icons/bs'
 import { HiOutlineMail } from 'react-icons/hi'
 import { SiStorybook } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
-import { Abilities } from './components/Abilities'
-import { About } from './components/About'
-import { Home } from './components/Home/Home'
+import { Home } from './components/Home'
 import { Header } from './components/Header'
 import { Projects } from './components/Projects'
 import { Contatos } from './components/Contatos'
+import { ThemeProvider } from './components/theme-provider'
 
 export function App() {
   const listaProjetos = [
@@ -292,15 +291,15 @@ export function App() {
     element.scrollIntoView()
   }
   return (
-    <div>
-      <Header handleClickMenu={handleClickMenu} />
-      <div className="flex flex-col gap-40 pr-[64px] pl-[64px]">
-        <Home />
-        <About />
-        <Abilities />
-        <Projects listaProjetos={listaProjetos} />
-        <Contatos contatos={listaContatos} />
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <div>
+        <Header handleClickMenu={handleClickMenu} />
+        <div className="flex flex-col gap-40 items-center px-10 lg:px-20">
+          <Home />
+          <Projects listaProjetos={listaProjetos} />
+          <Contatos contatos={listaContatos} />
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   )
 }

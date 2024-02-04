@@ -11,9 +11,9 @@ interface ContatosProps {
 
 export function Contatos({ contatos }: ContatosProps) {
   return (
-    <Reveal id="contatos" className="flex flex-col gap-5 mb-20">
+    <Reveal id="contatos" className="mb-20 w-full">
       <div className="w-full text-center mb-10">
-        <h1 className="font-tilt-warp text-white text-3xl">Contatos</h1>
+        <h1 className="font-tilt-warp text-3xl">Contatos</h1>
       </div>
       <div className="flex flex-col justify-center gap-4 lg:justify-around lg:gap-0 lg:flex-row">
         {contatos.map((contato) => {
@@ -26,13 +26,13 @@ export function Contatos({ contatos }: ContatosProps) {
                 onClick={() => {
                   window.open(contato.link, '_blank')
                 }}
-                className="bg-zinc-800 rounded-full p-4 text-default w-14 cursor-pointer"
+                className="cursor-pointer"
               >
                 {contato.icon}
               </div>
               <div className="flex flex-col gap-3">
-                <p className="text-white text-center">{contato.title}</p>
-                <p className="text-zinc-500">{contato.description}</p>
+                <p className=" text-center">{contato.title}</p>
+                <p className="">{contato.description}</p>
               </div>
             </div>
           )

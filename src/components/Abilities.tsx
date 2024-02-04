@@ -16,8 +16,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel'
 
 export const Abilities = () => {
@@ -36,35 +34,30 @@ export const Abilities = () => {
     { name: 'Figma', icon: <BiLogoFigma size={35} /> },
   ]
   return (
-    <Reveal id="abilities" className="flex flex-col gap-10">
-      <h1 className="text-white text-3xl text-center font-tilt-warp mb-10">
-        Habilidades
-      </h1>
+    <Reveal id="abilities">
       <Carousel
+        orientation="vertical"
         className="w-full"
         opts={{
           align: 'start',
         }}
       >
-        <CarouselContent>
+        <CarouselContent className="max-h-40">
           {abilitiesList.map((item) => {
             return (
-              <CarouselItem
-                key={item.name}
-                className="lg:basis-1/6 md:basis-1/2"
-              >
-                <div className="w-[100%] gap-3 h-full p-5 bg-zinc-800 flex flex-col items-center rounded-tl-3xl border-b-4 border-default">
+              <CarouselItem key={item.name}>
+                <div className="w-[100%] gap-5 h-full p-5 flex flex-col justify-between items-center border-b-4 border-muted">
                   <div>
-                    <p className="text-default sm:text-sm">{item.name}</p>
+                    <p>{item.name}</p>
                   </div>
-                  <div className="text-default">{item.icon}</div>
+                  <div>{item.icon}</div>
                 </div>
               </CarouselItem>
             )
           })}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        {/* <CarouselPrevious />
+        <CarouselNext /> */}
       </Carousel>
     </Reveal>
   )

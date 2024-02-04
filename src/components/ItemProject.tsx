@@ -36,7 +36,7 @@ export const ItemProject = ({ projeto }: ItemProjectProps) => {
         src={projeto.image}
         alt=""
       />
-      <div className="p-16 gap-3 w-full h-full z-10 bg-zinc-950 bg-opacity-50 flex flex-col items-center justify-center border-b-4 border-default">
+      <div className="p-16 gap-3 w-full h-full z-10 bg-zinc-950 bg-opacity-50 flex flex-col items-center justify-center border-b-4 border-foreground">
         {showInfo ? (
           <>
             <div>
@@ -63,7 +63,7 @@ export const ItemProject = ({ projeto }: ItemProjectProps) => {
             )}
           </div>
         )}
-        <div className="flex text-sky-500">
+        <div className="flex text-white">
           {projeto.icons.map((icon) => {
             return icon
           })}

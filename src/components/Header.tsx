@@ -1,6 +1,11 @@
-import { Drawer } from '@mui/material'
-import { useState } from 'react'
-import { HiMenu } from 'react-icons/hi'
+import { ThemeToggle } from './theme-toggle'
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarTrigger,
+} from './ui/menubar'
 
 interface HeaderProps {
   handleClickMenu: (click: string) => void
@@ -14,48 +19,36 @@ const buttonsList = [
 ]
 
 export function Header({ handleClickMenu }: HeaderProps) {
-  const [isOpen, setIsOpen] = useState(false)
-
   return (
     <header className="h-3 w-full z-10 fixed">
-      <div className="bg-zinc-800 border-0 h-1/2 flex justify-between items-center p-7 pr-[64px] pl-[64px]">
+      <div className="bg-card border-b-2 border-border h-1/2 flex justify-between items-center p-7 px-10 lg:px-20">
         <h1
-          className="p-0 cursor-pointer font-tilt-warp text-default"
+          className="p-0 cursor-pointer font-tilt-warp"
           onClick={() => handleClickMenu('menu')}
         >
           Bruno Frohlich
         </h1>
         <div className="flex items-center gap-4">
-          {/* <SwitchRoot onCheckedChange={changeTheme}>
-            <SwitchThumb>
-              {theme === 'light' ? <BsFillSunFill /> : <BsFillMoonFill />}
-            </SwitchThumb>
-          </SwitchRoot> */}
-          <HiMenu
-            size={30}
-            className="text-default cursor-pointer"
-            onClick={() => setIsOpen(true)}
-          />
+          <Menubar>
+            <MenubarMenu>
+              <MenubarTrigger>Menu</MenubarTrigger>
+              <MenubarContent>
+                {buttonsList.map((item) => (
+                  <MenubarItem
+                    key={item.id}
+                    onClick={() => {
+                      handleClickMenu(item.click)
+                    }}
+                  >
+                    {item.text}
+                  </MenubarItem>
+                ))}
+              </MenubarContent>
+            </MenubarMenu>
+          </Menubar>
+          <ThemeToggle />
         </div>
       </div>
-      <Drawer anchor={'right'} open={isOpen} onClose={() => setIsOpen(false)}>
-        <div className="p-5 h-screen flex flex-col bg-zinc-800">
-          {buttonsList.map((item) => (
-            <>
-              <button
-                className="w-48 text-default p-3 transition-opacity hover:opacity-10 border-b-[1px] border-default"
-                key={item.id}
-                onClick={() => {
-                  setIsOpen(false)
-                  handleClickMenu(item.click)
-                }}
-              >
-                {item.text}
-              </button>
-            </>
-          ))}
-        </div>
-      </Drawer>
     </header>
   )
 }
