@@ -292,14 +292,14 @@ export function App() {
   }
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div>
+      <header>
         <Header handleClickMenu={handleClickMenu} />
-        <div className="flex flex-col gap-40 items-center px-10 lg:px-20">
-          <Home />
-          <Projects listaProjetos={listaProjetos} />
-          <Contatos contatos={listaContatos} />
-        </div>
-      </div>
+      </header>
+      <main className="flex flex-col gap-40 items-center px-10 lg:px-20">
+        <Home />
+        <Projects listaProjetos={listaProjetos} />
+        <Contatos contatos={listaContatos} />
+      </main>
     </ThemeProvider>
   )
 }
