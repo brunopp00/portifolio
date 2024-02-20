@@ -92,7 +92,7 @@ export function App() {
       id: 4,
       name: 'Pokedéx',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur ipsam recusandae iste. Autem cumque repudiandae molestias animi maxime, optio nulla possimus obcaecati iste, ab asperiores, vero quibusdam eligendi sunt.',
       image: PreviewPokedex,
       urlSite: 'https://brunopp00.github.io/pokedex/',
       urlGitHub: 'https://github.com/brunopp00/pokedex',
