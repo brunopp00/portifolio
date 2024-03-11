@@ -1,20 +1,7 @@
 import { ThemeToggle } from './theme-toggle'
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarTrigger,
-} from './ui/menubar'
-
 interface HeaderProps {
   handleClickMenu: (click: string) => void
 }
-
-const buttonsList = [
-  { id: 0, text: 'PROJETOS', click: 'projetos' },
-  { id: 3, text: 'CONTATOS', click: 'contatos' },
-]
 
 export function Header({ handleClickMenu }: HeaderProps) {
   return (
@@ -26,23 +13,6 @@ export function Header({ handleClickMenu }: HeaderProps) {
         Bruno Frohlich
       </h1>
       <div className="flex items-center gap-4">
-        <Menubar>
-          <MenubarMenu>
-            <MenubarTrigger>Menu</MenubarTrigger>
-            <MenubarContent>
-              {buttonsList.map((item) => (
-                <MenubarItem
-                  key={item.id}
-                  onClick={() => {
-                    handleClickMenu(item.click)
-                  }}
-                >
-                  {item.text}
-                </MenubarItem>
-              ))}
-            </MenubarContent>
-          </MenubarMenu>
-        </Menubar>
         <ThemeToggle />
       </div>
     </div>
