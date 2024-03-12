@@ -27,7 +27,7 @@ export function Projects({ listaProjetos }: ProjectsProps) {
         <CardHeader className="w-full text-center">
           <CardTitle>Projetos</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="p-16">
           <Carousel
             opts={{
               align: 'start',

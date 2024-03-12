@@ -17,7 +17,7 @@ export function Contatos({ contatos }: ContatosProps) {
         <CardHeader className="text-center">
           <CardTitle>Contatos</CardTitle>
         </CardHeader>
-        <CardContent className="flex flex-col justify-center gap-4 lg:justify-around lg:gap-0 lg:flex-row">
+        <CardContent className="flex flex-col justify-center gap-4 p-10 lg:justify-around lg:gap-0 lg:flex-row">
           {contatos.map((contato) => {
             return (
               <div
