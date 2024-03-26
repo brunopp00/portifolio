@@ -12,7 +12,3 @@ Design Responsivo: Este portfólio foi projetado com a responsividade em mente, 
 Informações Detalhadas: Explore seções dedicadas para descobrir mais sobre mim, minhas habilidades técnicas, projetos anteriores e muito mais.
 
 Integração com Tailwind CSS: Utilizando o poderoso framework de CSS, Tailwind CSS, este projeto apresenta um design moderno e elegante.
-
-Como Executar o Projeto Localmente
-Clone o repositório:
-
